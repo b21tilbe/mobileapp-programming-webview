@@ -33,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         webView = findViewById(R.id.web_view);
-
+        webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("https://his.se");
+
 
         /*
         * Rename your App. Tip: Values->Strings
